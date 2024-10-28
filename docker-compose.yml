@@ -1,0 +1,8 @@
+version: '3'
+services:
+  container:
+    build:
+      context: ./tests/test-container
+      dockerfile: Dockerfile
+    volumes:
+      - './:/code:cached'
